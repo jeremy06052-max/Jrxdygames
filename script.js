@@ -48,8 +48,8 @@ const tiktokTab = document.getElementById("tiktokTab");
 function showPage(page) {
   const showTikTok = page === "tiktok";
   gamesPage.hidden = showTikTok; tiktokPage.hidden = !showTikTok;
-  gamesTab.classList.toggle("active", !showTikTok);
-  tiktokTab.classList.toggle("active", showTikTok);
+  gamesTab.onclick = () => showPage("games");
+tiktokTab.onclick = () => showPage("tiktok");
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 gamesTab.addEventListener("click", () => showPage("games"));
