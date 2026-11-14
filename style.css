@@ -26,3 +26,19 @@ footer{display:flex;justify-content:space-between;gap:12px;padding:25px clamp(20
   pointer-events: auto;
   cursor: pointer;
 }
+.topbar {
+    position: relative !important;
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+}
+
+.main-nav,
+.nav-btn {
+    position: relative !important;
+    z-index: 999999 !important;
+    pointer-events: auto !important;
+}
+
+.nav-btn {
+    cursor: pointer !important;
+}
