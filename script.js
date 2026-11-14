@@ -80,26 +80,3 @@ document.addEventListener("keydown", event => {
   }
 });
 renderGames();
-// JRXDY Cursor Glow
-if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
-
-    const glow = document.createElement("div");
-    glow.className = "cursor-glow";
-
-    document.body.appendChild(glow);
-
-    document.addEventListener("mousemove", (e) => {
-        glow.style.left = e.clientX + "px";
-        glow.style.top = e.clientY + "px";
-
-        glow.classList.add("visible");
-    });
-
-    document.addEventListener("mouseleave", () => {
-        glow.classList.remove("visible");
-    });
-
-    document.addEventListener("mouseenter", () => {
-        glow.classList.add("visible");
-    });
-}
